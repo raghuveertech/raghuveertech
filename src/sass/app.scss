@@ -1,0 +1,14 @@
+@import "./variables.scss";
+body {
+  background: rgb(34, 34, 34);
+  background: linear-gradient(
+    240deg,
+    rgba(34, 34, 34, 1) 43%,
+    rgba(27, 27, 27, 1) 43%
+  );
+}
+
+.main {
+  height: 100vh;
+  padding-top: 120px;
+}

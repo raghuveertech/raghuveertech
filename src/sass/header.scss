@@ -1,0 +1,63 @@
+@import "./variables.scss";
+header {
+  padding: 20px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  .container {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      max-width: 140px;
+      a {
+        display: block;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    nav {
+      ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        li {
+          margin: 0 15px;
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            font-size: 20px;
+            font-weight: 400;
+            text-decoration: none;
+            position: relative;
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -10px;
+              height: 5px;
+              background: $highlight;
+              background: linear-gradient(
+                90deg,
+                $highlight 0%,
+                rgba(255, 255, 255, 0) 100%
+              );
+              width: 0;
+              transition: all 0.3s;
+            }
+            &:hover,
+            &.active {
+              &:after {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
