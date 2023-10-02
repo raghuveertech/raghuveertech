@@ -1,0 +1,75 @@
+@import "./variables.scss";
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 25px;
+  font-size: 18px;
+  border-radius: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 600;
+  position: relative;
+  span {
+    transition: all 0.3s;
+  }
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 0%;
+    transition: all 0.3s;
+  }
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+  }
+  span {
+    position: relative;
+    z-index: 1;
+  }
+  &.primary-btn {
+    background: rgb(206, 205, 210);
+    background: linear-gradient(
+      90deg,
+      rgba(206, 205, 210, 1) 0%,
+      rgba(255, 255, 255, 1) 57%
+    );
+    span {
+      color: $black;
+    }
+    &:before {
+      background: $black;
+      background: linear-gradient(90deg, $black 0%, $secondary 57%);
+    }
+    &:hover {
+      span {
+        color: $white;
+      }
+    }
+  }
+  &.secondary-btn {
+    background: $black;
+    background: linear-gradient(90deg, $secondary 0%, $black 57%);
+    span {
+      color: $white;
+    }
+    &:before {
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(206, 205, 210, 1) 57%
+      );
+    }
+    &:hover {
+      span {
+        color: $black;
+      }
+    }
+  }
+}

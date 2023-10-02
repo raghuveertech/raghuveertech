@@ -1,22 +1,30 @@
-import "src/sass/intro.scss";
+import { Link } from "react-router-dom";
+import "src/sass/ui.scss";
+import "src/sass/home.scss";
 
-const Intro = () => {
+const Home = () => {
   return (
-    <section className="main intro">
-      <div className="intro__text">
-        <div className="intro__text__card">
-          <h1>Raghuveer Panchagnula</h1>
+    <section className="home main">
+      <div className="home__text">
+        <div className="home__text__main">
+          <h1>I'm Raghuveer Panchagnula</h1>
           <h2>Full Stack Developer</h2>
-        </div>
-        <div className="intro__text__main">
-          <h3 className="special">Hello, welcome to my webiste.</h3>
-          <p>
+          <div className="home__text__main__buttons">
+            <Link className="btn primary-btn" to={"/about-me"}>
+              <span>More About Me</span>
+            </Link>
+            <Link className="btn secondary-btn" to={"/contact-me"}>
+              <span>Contact Me</span>
+            </Link>
+          </div>
+          {/* <h3 className="special">Hello, welcome to my webiste.</h3> */}
+          {/* <p>
             I'm Raghuveer, web developer with over a decade of experience.
-          </p>{" "}
-          <p>
+          </p>{" "} */}
+          {/* <p>
             I specialize in JavaScript, React, Next.js, Node.js, Express.js, and
             MongoDB, using these tools to craft exceptional web experiences.
-          </p>
+          </p> */}
         </div>
         {/* <p>
           From creating user-friendly interfaces to optimizing performance, my
@@ -42,4 +50,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default Home;
