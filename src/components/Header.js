@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "src/sass/header.scss";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header>
       <div className="container">
@@ -11,7 +12,10 @@ const Header = () => {
             <img src="/images/logo.png" alt="Raghuveer Panchagnula" />
           </a>
         </div>
-        <nav>
+        <nav className={`${menuOpen ? "open" : ""}`}>
+          <a href="#" className="nav-close" onClick={() => setMenuOpen(false)}>
+            &times;
+          </a>
           <ul>
             <li>
               <NavLink to="/">Home</NavLink>
@@ -30,6 +34,11 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+        <div className="hamburger-icon" onClick={() => setMenuOpen(true)}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </header>
   );
