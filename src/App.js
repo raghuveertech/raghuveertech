@@ -1,12 +1,15 @@
-import Header from "src/components/Header";
-import "src/sass/app.scss";
-import ReactRouter from "./components/ReactRouter";
+import Layout from "./components/Layout";
+import MainContent from "./components/MainContent";
+import MainNav from "./components/MainNav";
+import "./scss/global.scss";
 
 function App() {
   return (
     <>
-      <Header />
-      <ReactRouter />
+      <Layout>
+        <MainNav />
+        <MainContent></MainContent>
+      </Layout>
     </>
   );
 }
