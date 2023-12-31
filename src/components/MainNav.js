@@ -2,11 +2,11 @@ import "./../scss/nav.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import {
-  faAddressBook,
   faFileAlt,
   faHome,
   faUserAlt,
   faEnvelopeOpen,
+  faBriefcase,
 } from "@fortawesome/free-solid-svg-icons";
 
 const MainNav = () => {
@@ -61,9 +61,9 @@ const MainNav = () => {
             </a>
           </li>
           <li>
-            <a href="#portfolio">
-              <FontAwesomeIcon icon={faAddressBook} />
-              Portfolio
+            <a href="#latestWork">
+              <FontAwesomeIcon icon={faBriefcase} />
+              Latest Work
             </a>
           </li>
           <li>

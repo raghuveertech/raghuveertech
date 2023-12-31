@@ -1,7 +1,7 @@
-import React from "react";
+import "./../scss/main-content.scss";
 
 const MainContent = (props) => {
-  return <div>{props.children}</div>;
+  return <div className="main__content">{props.children}</div>;
 };
 
 export default MainContent;
