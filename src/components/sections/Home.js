@@ -6,7 +6,7 @@ const Home = () => {
       <div className="overlay">
         <div className="content">
           <h1>Raghuveer Panchagnula</h1>
-          <p>Designer, Developer, Mentor, Freelancer</p>
+          <p>Designer, Developer, Freelancer, Mentor</p>
         </div>
       </div>
     </div>

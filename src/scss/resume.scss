@@ -1,0 +1,7 @@
+@import "variables.scss";
+
+.section {
+  &.resume {
+    background-color: $bg;
+  }
+}
