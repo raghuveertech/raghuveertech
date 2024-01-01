@@ -37,7 +37,110 @@ h2 {
   }
 }
 
+h3 {
+  font-family: $primary-font;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: $secondary-color;
+  font-weight: 600;
+}
+
 p {
   font-size: 16px;
   line-height: 1.5;
+}
+
+ul {
+  &.special {
+    padding-left: 0;
+    li {
+      position: relative;
+      list-style: none;
+      padding-left: 12px;
+      margin: 20px 0;
+      font-size: 16px;
+      line-height: 32px;
+      strong {
+        color: $primary-color;
+        font-weight: 600;
+      }
+      &:before {
+        position: absolute;
+        left: -10px;
+        top: 12px;
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid $tertiary-color;
+        border-right: 2px solid $tertiary-color;
+        transform: rotate(45deg);
+      }
+      a {
+        color: $tertiary-color;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.row {
+  display: flex;
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 100%;
+    @media screen and (min-width: 992px) {
+      flex: 0 0 auto;
+      width: 50%;
+    }
+  }
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 10px;
+  }
+  .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.resume {
+  .resume-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid $tertiary-color;
+  position: relative;
+  .special {
+    padding: 0 12px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -11px;
+    top: 0;
+    background: $bg;
+    border: 2px solid $tertiary-color;
+  }
+  h4 {
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $tertiary-color;
+    letter-spacing: 2px;
+  }
+  h5 {
+    display: inline-block;
+    background-color: $bg-2;
+    padding: 10px;
+  }
 }

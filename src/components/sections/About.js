@@ -20,9 +20,9 @@ const About = () => {
           <h3>UI/UX Designer & Web Developer.</h3>
           <div className="row">
             <div className="col-6">
-              <ul>
+              <ul className="special">
                 <li>
-                  <strong>Birthday:</strong> <span>8 Aug 1991</span>
+                  <strong>Birthday:</strong> <span>9 Aug 1991</span>
                 </li>
                 <li>
                   <strong>Website:</strong>{" "}
@@ -43,7 +43,7 @@ const About = () => {
               </ul>
             </div>
             <div className="col-6">
-              <ul>
+              <ul className="special">
                 <li>
                   <strong>Degree:</strong> <span>B. Tech.</span>
                 </li>
