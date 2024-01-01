@@ -4,10 +4,10 @@ const Resume = () => {
   return (
     <div className="section resume" id="resume">
       <h2>Resume</h2>
-      <div class="row">
-        <div class="col-lg-6 ">
-          <h3 class="resume-title">Sumary</h3>
-          <div class="resume-item">
+      <div className="row">
+        <div className="col-lg-6 ">
+          <h3 className="resume-title">Sumary</h3>
+          <div className="resume-item">
             <h4>Raghuveer Panchagnula</h4>
             <ul className="special">
               <li>
@@ -23,8 +23,8 @@ const Resume = () => {
               </li>
             </ul>
           </div>
-          <h3 class="resume-title">Skills</h3>
-          <div class="resume-item">
+          <h3 className="resume-title">Skills</h3>
+          <div className="resume-item">
             <h4>Full Stack Development</h4>
             <ul className="special">
               <li>React.js</li>
@@ -33,7 +33,7 @@ const Resume = () => {
               <li>Express.js</li>
             </ul>
           </div>
-          <div class="resume-item">
+          <div className="resume-item">
             <h4>Front-End Development</h4>
             <ul className="special">
               <li>Next.js</li>
@@ -50,21 +50,21 @@ const Resume = () => {
               <li>Responsive Web Design</li>
             </ul>
           </div>
-          <div class="resume-item">
+          <div className="resume-item">
             <h4>Unit Testing</h4>
             <ul className="special">
               <li>Jest</li>
               <li>React Testing Library</li>
             </ul>
           </div>
-          <div class="resume-item">
+          <div className="resume-item">
             <h4>Design and Prototyping</h4>
             <ul className="special">
               <li>Photoshop</li>
               <li>Figma</li>
             </ul>
           </div>
-          <div class="resume-item">
+          <div className="resume-item">
             <h4>Version Control and Collaboration</h4>
             <ul className="special">
               <li>Git</li>
@@ -72,16 +72,16 @@ const Resume = () => {
               <li>Zendesk</li>
             </ul>
           </div>
-          <div class="resume-item">
+          <div className="resume-item">
             <h4>Build Tools</h4>
             <ul className="special">
               <li>Webpack</li>
             </ul>
           </div>
         </div>
-        <div class="col-lg-6 ">
-          <h3 class="resume-title">Professional Experience</h3>
-          <div class="resume-item">
+        <div className="col-lg-6 ">
+          <h3 className="resume-title">Professional Experience</h3>
+          <div className="resume-item">
             <h4>Cendyn India Pvt. Ltd.</h4>
             <h5>SENIOR SOFTWARE ENGINEER - (SEPTEMBER 2022 - PRESENT)</h5>
             <ul className="special">
@@ -105,7 +105,7 @@ const Resume = () => {
               </li>
             </ul>
           </div>
-          <div class="resume-item">
+          <div className="resume-item">
             <h4>OSI Digital</h4>
             <h5>SENIOR SOFTWARE ENGINEER - (MARCH 2022 - SEPTEMBER 2022)</h5>
             <ul className="special">
@@ -122,7 +122,7 @@ const Resume = () => {
               </li>
             </ul>
           </div>
-          <div class="resume-item">
+          <div className="resume-item">
             <h4>Pegasus</h4>
             <h5>SENIOR WEB DEVELOPER - (MARCH 2017 to MARCH 2022)</h5>
             <ul className="special">
@@ -139,7 +139,7 @@ const Resume = () => {
               <li>Reviewing code and giving feedback.</li>
             </ul>
           </div>
-          <div class="resume-item">
+          <div className="resume-item">
             <h4>OSI Technologies</h4>
             <h5>SOFTWARE ENGINEER - (JULY 2015 to SEPTEMBER 2016)</h5>
             <ul className="special">
@@ -155,7 +155,7 @@ const Resume = () => {
               <li>Support middleware team when needed.</li>
             </ul>
           </div>
-          <div class="resume-item">
+          <div className="resume-item">
             <h4>Warriorz Soft Technologies</h4>
             <h5>ASSOCIATE SOFTWARE ENGINEER - (MAY 2013 to JULY 2015)</h5>
             <ul className="special">
@@ -166,8 +166,8 @@ const Resume = () => {
               <li>Work as a designer on a need basis.</li>
             </ul>
           </div>
-          <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
+          <h3 className="resume-title">Education</h3>
+          <div className="resume-item">
             <h4>B. Tech. - 73%</h4>
             <ul className="special">
               <li>
@@ -176,7 +176,7 @@ const Resume = () => {
               </li>
             </ul>
           </div>
-          <div class="resume-item">
+          <div className="resume-item">
             <h4>Intermediate - 92.5%</h4>
             <ul className="special">
               <li>
@@ -184,7 +184,7 @@ const Resume = () => {
               </li>
             </ul>
           </div>
-          <div class="resume-item">
+          <div className="resume-item">
             <h4>10th Class - 85.5%</h4>
             <ul className="special">
               <li>

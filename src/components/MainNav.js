@@ -9,7 +9,14 @@ import {
   faBriefcase,
 } from "@fortawesome/free-solid-svg-icons";
 
-const MainNav = () => {
+const MainNav = (props) => {
+  const { sectionRefs } = props;
+
+  const scrollToSection = (e, section) => {
+    e.preventDefault();
+    sectionRefs[section].current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="main__nav">
       <div className="main__nav__image">
@@ -43,31 +50,38 @@ const MainNav = () => {
       <div className="main__nav__links">
         <ul>
           <li>
-            <a href="#home" className="active">
+            <a
+              className="active"
+              href="#home"
+              onClick={(e) => scrollToSection(e, "home")}
+            >
               <FontAwesomeIcon icon={faHome} />
               Home
             </a>
           </li>
           <li>
-            <a href="#about">
+            <a href="#about" onClick={(e) => scrollToSection(e, "about")}>
               <FontAwesomeIcon icon={faUserAlt} />
               About
             </a>
           </li>
           <li>
-            <a href="#resume">
+            <a href="#resume" onClick={(e) => scrollToSection(e, "resume")}>
               <FontAwesomeIcon icon={faFileAlt} />
               Resume
             </a>
           </li>
           <li>
-            <a href="#latestWork">
+            <a
+              href="#latestWork"
+              onClick={(e) => scrollToSection(e, "latestWork")}
+            >
               <FontAwesomeIcon icon={faBriefcase} />
               Latest Work
             </a>
           </li>
           <li>
-            <a href="#contact">
+            <a href="#contact" onClick={(e) => scrollToSection(e, "contact")}>
               <FontAwesomeIcon icon={faEnvelopeOpen} />
               Contact
             </a>

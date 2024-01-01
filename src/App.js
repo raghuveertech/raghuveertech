@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Layout from "./components/Layout";
 import MainContent from "./components/MainContent";
 import MainNav from "./components/MainNav";
@@ -9,16 +10,33 @@ import Resume from "./components/sections/Resume";
 import "./scss/global.scss";
 
 function App() {
+  const sectionRefs = {
+    home: useRef(null),
+    about: useRef(null),
+    resume: useRef(null),
+    latestWork: useRef(null),
+    contact: useRef(null),
+  };
   return (
     <>
       <Layout>
-        <MainNav />
+        <MainNav sectionRefs={sectionRefs} />
         <MainContent>
-          <Home />
-          <About />
-          <Resume />
-          <LatestWork />
-          <Contact />
+          <div ref={sectionRefs.home}>
+            <Home />
+          </div>
+          <div ref={sectionRefs.about}>
+            <About />
+          </div>
+          <div ref={sectionRefs.resume}>
+            <Resume />
+          </div>
+          <div ref={sectionRefs.latestWork}>
+            <LatestWork />
+          </div>
+          <div ref={sectionRefs.contact}>
+            <Contact />
+          </div>
         </MainContent>
       </Layout>
     </>
